@@ -68,7 +68,7 @@ body {
 }
 
 .hero .content img {
-  width: 40rem;
+  max-width: 40rem;
 }
 
 .hero .content p {
@@ -290,6 +290,6 @@ footer .credit a:hover {
 /* mobile */
 @media (max-width: 450) {
   html {
-    font-size: 55%;
+    font-size: 60%;
   }
 }
