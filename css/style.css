@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 7%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  transition: 0.5s;
+}
+
+.navbar .navbar-nav a {
+  display: inline-block;
+  font-size: 1.4rem;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.navbar a:hover {
+  color: #999;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("../img/money-heist-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  mask-image: linear-gradient(rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
+}
+
+.hero .content {
+  position: relative;
+  padding: 1.4rem 7%;
+  max-width: 60rem;
+}
+
+.hero .content img {
+  width: 40rem;
+}
+
+.hero .content p {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 100;
+  margin-top: 1rem;
+  line-height: 1.4;
+}
+
+.hero .content .cta {
+  margin-top: 1.8rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #fff;
+  background-color: #bc0707;
+  border-radius: 0.5rem;
+}
+
+.hero .content .cta:hover {
+  background-color: #9f0c0c;
+}
+
+/* About Section */
+.about,
+.contact {
+  padding: 8rem 7% 1.4rem;
+}
+
+.about h2,
+.contact h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .about-img {
+  flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+  width: 100%;
+}
+
+.about .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.about .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.about .row .content p {
+  margin-bottom: 3rem;
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+.about .row .content ul {
+  margin-top: -2rem;
+  padding: 1.4rem 7%;
+}
+
+.about .row .content li {
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+/* Contact Section */
+.contact .row {
+  display: flex;
+  max-width: 60rem;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #fff;
+  border-radius: 2rem;
+}
+
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact .row form .input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: #000;
+  padding-left: 2rem;
+  gap: 2rem;
+}
+
+.contact .row form .input-group input,
+.contact .row form .input-group textarea {
+  width: 100%;
+  padding: 3rem;
+  font-size: 1.7rem;
+  background: none;
+  color: #fff;
+}
+
+.contact .row form .btn {
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+}
+
+.contact .row form .btn:hover {
+  box-shadow: 0 0 10px 5px red;
+  transition: 0.5s;
+}
+
+footer {
+  background-color: #bc0707;
+  padding: 2rem 5rem;
+}
+
+footer .social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+footer .social a {
+  color: #fff;
+}
+
+footer .social a:hover {
+  color: #999;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+footer .credit a {
+  color: #fff;
+}
+
+footer .credit a:hover {
+  color: #999;
+}
+
+/* Responsive */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    height: 100vh;
+    width: 30rem;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: #fff;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .navbar .navbar-nav a:hover {
+    color: #999;
+  }
+
+  .navbar .navbar-nav.active {
+    left: 0;
+  }
+
+  .hero {
+    background-position-x: 90%;
+  }
+
+  .contact .row {
+    flex-wrap: wrap;
+  }
+
+  .contact .row form {
+    padding-top: 0;
+  }
+}
+
+/* mobile */
+@media (max-width: 450) {
+  html {
+    font-size: 55%;
+  }
+}
