@@ -64,23 +64,27 @@ body {
 .hero .content {
   position: relative;
   padding: 1.4rem 7%;
-  max-width: 60rem;
+  width: 60rem;
+}
+
+.hero .content .img {
+  width: 30rem;
 }
 
 .hero .content img {
-  max-width: 40rem;
+  width: 100%;
 }
 
 .hero .content p {
   color: #fff;
   font-size: 1.4rem;
   font-weight: 100;
-  margin-top: 1rem;
+  margin-top: 1.4rem;
   line-height: 1.4;
 }
 
 .hero .content .cta {
-  margin-top: 1.8rem;
+  margin-top: 2rem;
   display: inline-flex;
   align-items: center;
   padding: 0.8rem 1rem;
@@ -199,6 +203,7 @@ body {
 footer {
   background-color: #bc0707;
   padding: 2rem 5rem;
+  margin-top: 3rem;
 }
 
 footer .social {
@@ -276,6 +281,10 @@ footer .credit a:hover {
 
   .hero {
     background-position-x: 90%;
+  }
+
+  .hero .content .img {
+    width: 25rem;
   }
 
   .contact .row {
